@@ -14,7 +14,7 @@ functions:
     handler: handler.hello
     events:
       - http:
-          path: hellp
+          path: hello
           method: get
           cors: true
     deploymentSettings:

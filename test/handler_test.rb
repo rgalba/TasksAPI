@@ -5,7 +5,7 @@ class TestHandler < Test::Unit::TestCase
     def test_happy_path()
         response = hello(event: {'body': 'Hello, World!'}, context: {})
         assert_equal 200, response[:statusCode]
-        assert_match /API V2/, response[:body]
+        assert_match /API V3/, response[:body]
     end
 
     def test_sad_path()
