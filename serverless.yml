@@ -12,6 +12,11 @@ plugins:
 functions:
   hello:
     handler: handler.hello
+    events:
+      - http:
+          path: hellp
+          method: get
+          cors: true
     deploymentSettings:
       type: Linear10PercentEvery1Minute
       alias: Live
