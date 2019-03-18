@@ -5,9 +5,7 @@ def hello(event:, context:)
     puts "Received Request: #{event}"
 
     body = {
-      version: "API V1",
-      event: event,
-      context: context
+      version: "API V1"
     }
    { statusCode: 200, body: JSON.generate(body) }
   rescue StandardError => e
