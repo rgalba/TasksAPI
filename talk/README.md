@@ -78,11 +78,16 @@ DevOps is a safety way to deploy even for user than for developers.
 
 # Section 3: A real app
 
-application: Hello World API
+Hello World API
 stack:
 - AWS Lambda
 - Serverless framework
 - Ruby
+
+```sh
+$ curl https://2vkc4jaofg.execute-api.us-east-1.amazonaws.com/dev/hello
+{"version":"API V1"}
+```
 
 ### Why to use a serverless framework?
 
