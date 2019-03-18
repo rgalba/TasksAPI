@@ -4,8 +4,11 @@ def hello(event:, context:)
   begin
     puts "Received Request: #{event}"
 
+    raise "brand new bug" if true
+
     body = {
-      version: "API V1"
+      version: "V1.0.3",
+      payload: "Hello API."
     }
    { statusCode: 200, body: JSON.generate(body) }
   rescue StandardError => e
