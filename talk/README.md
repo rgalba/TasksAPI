@@ -78,12 +78,11 @@ DevOps is a safety way to deploy even for user than for developers.
 
 # Section 3: A real app
 
-application: TODO list API
+application: Hello World API
 stack:
 - AWS Lambda
 - Serverless framework
-- DynamoDB
-- Python
+- Ruby
 
 ### Why to use a serverless framework?
 
@@ -105,7 +104,7 @@ stack:
 #### Deployment of a Lambda function
 ```sh
 aws configure
-cd DevOpsServerless
+cd HelloServerlessAPI
 sls deploy
 ```
 
