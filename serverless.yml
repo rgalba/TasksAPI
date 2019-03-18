@@ -9,6 +9,11 @@ provider:
 plugins:
   - serverless-plugin-canary-deployments
 
+custom:
+deploymentSettings:
+  stages:
+    - prod
+
 functions:
   hello:
     handler: handler.hello
@@ -19,4 +24,5 @@ functions:
           cors: true
     deploymentSettings:
       type: Linear10PercentEvery1Minute
-      alias: Live
+      # type: AllAtOnce
+      alias: Hello
