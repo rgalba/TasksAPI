@@ -2,6 +2,7 @@ require 'json'
 
 def hello(event:, context:)
   begin
+    raise unless event
     puts "Received Request: #{event}"
 
     body = {
