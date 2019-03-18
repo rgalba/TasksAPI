@@ -8,6 +8,8 @@ A Ruby api using Serverless framework on AWS Lambda.
 
 ```sh
 $ sls deploy
+$ curl https://123.execute-api.us-east-1.amazonaws.com/dev/hello
+{"version":"V1.0.4","payload":"Hello API."}
 ```
 
 [1]: ./serverless-devops-talk.md
